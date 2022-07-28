@@ -1,0 +1,62 @@
+/* 清除内外边距 */
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    /* 100% 意思是 不管里面有没有内容，它盒子的高度都是和父盒子高度一致 */
+    /* auto 意思是 根据里面内容的变化高度随之变化 若里面没有内容，则高度为0 */
+    height: 100%;
+    width: 100%;
+    background: url('/assets/images/login_bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.loginAndRegBox {
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-box {
+    height: 60px;
+    background: url('/assets/images/login_title.png') no-repeat center;
+}
+
+.reg-box {
+    display: none;
+}
+
+.layui-form {
+    padding: 0 30px;
+}
+
+.links {
+    /* flex弹性布局 */
+    display: flex;
+    /* justify-content 是指项目在主轴上的对齐方式 */
+    /* flex-end:在主轴上由右或者下排列 */
+    justify-content: flex-end;
+}
+
+.links a {
+    font-size: 12px;
+}
+
+.layui-form-item {
+    position: relative;
+}
+
+.layui-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.layui-input {
+    padding-left: 32px;
+}
